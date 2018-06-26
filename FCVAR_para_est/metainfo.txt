@@ -1,4 +1,4 @@
-Name of Quantlet:  ACF_plot
+Name of Quantlet:  FCVAR_para_est
  
 Published in:      R 
   
