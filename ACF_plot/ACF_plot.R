@@ -19,11 +19,12 @@ library("forecast")
 library("fracdiff") # for fracdiff, fdGPH
 library("tseries")  # for garch
 library("jrvFinance")
+library("xlsx")
 
 #============Data import
 #asset_return = read.csv("Total data set_log return.csv", header = TRUE, sep = ";", dec = ".")
 
-inputdata_all <- read.xls("CDS_Bond_5y_sync.xlsx",sheet = 1,header = TRUE,as.is = TRUE)
+inputdata_all <- xlsx::read.xlsx("CDS_Bond_5y_sync.xlsx",sheetIndex = 1)
 bond_spread <- read.csv("bond_spreadBP_usriskfree_06122017.csv",sep=",",dec=".",header=TRUE)
 
 #============Date definition
